@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9311d641-4274-4709-ae69-ed1380ec8e4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,38 +23,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ayarlar/fonksiyonlar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YonetimPaneli/sozlesmelervemetinlersonuc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-328" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ayarlar/fonksiyonlar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="61" column="10" lean-forward="true" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-              <folding>
-                <element signature="e#2259#2287#0#HTML" expanded="true" />
-              </folding>
+
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+
             </state>
           </provider>
         </entry>
@@ -99,7 +88,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>rakam</find>
       <find>Beyaz</find>
+      <find>geri</find>
+      <find>index</find>
+      <find>erkek</find>
+      <find>Ba</find>
+      <find>Mut</find>
+      <find>ev</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,6 +105,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Ayarlar/stil.css" />
+        <option value="$PROJECT_DIR$/Ayarlar/fonksiyonlar.php" />
+        <option value="$PROJECT_DIR$/anasayfa.php" />
+        <option value="$PROJECT_DIR$/Ayarlar/sitesayfalari.php" />
+        <option value="$PROJECT_DIR$/mutfak.module" />
+        <option value="$PROJECT_DIR$/mutfak.php" />
+        <option value="$PROJECT_DIR$/mobilya.php" />
+        <option value="$PROJECT_DIR$/evdekorasyon.php" />
+        <option value="$PROJECT_DIR$/Aydınlatma.php" />
+        <option value="$PROJECT_DIR$/aydinlatma.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/YonetimPaneli/index.php" />
         <option value="$PROJECT_DIR$/Ayarlar/fonksiyonlar.php" />
@@ -125,6 +130,7 @@
     <option name="width" value="904" />
     <option name="height" value="984" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -187,21 +193,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557573543002</updated>
-      <workItem from="1557573544654" duration="6721000" />
-      <workItem from="1557583050587" duration="8754000" />
-    </task>
-    <task id="LOCAL-00001" summary="Yönetim Paneli İç ve Dış Sayfa Yapısı, Site Ayarları Güncelletme, Sözleşme ve Metin Alanlarını Güncelletme İşlemleri">
-      <created>1557608941043</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1557608941043</updated>
+
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15475000" />
+
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -246,35 +244,7 @@
     <entry file="file://$PROJECT_DIR$/Ayarlar/stilyonetim.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/yoneticigiris.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/anasayfa.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/pano.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/siteayarlari.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/siteayarlarisonuc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="40" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/siteayarlarisonuchata.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="61" column="10" lean-forward="true" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-          <folding>
-            <element signature="e#2259#2287#0#HTML" expanded="true" />
-          </folding>
+
         </state>
       </provider>
     </entry>
@@ -295,29 +265,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/sozlesmelervemetinler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="132" selection-start-line="16" selection-start-column="132" selection-end-line="16" selection-end-column="132" />
+
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ayarlar/fonksiyonlar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YonetimPaneli/sozlesmelervemetinlersonuc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-328" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ayarlar/ayar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
+
         </state>
       </provider>
     </entry>
