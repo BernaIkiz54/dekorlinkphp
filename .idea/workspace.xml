@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9311d641-4274-4709-ae69-ed1380ec8e4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ayarlar/ayar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ayarlar/ayar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ayarlar/fonksiyonlar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ayarlar/fonksiyonlar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resimler/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resimler/Logo.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ayarlar/ayar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="142">
               <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
             </state>
           </provider>
@@ -191,18 +188,25 @@
       <option name="presentableId" value="Default" />
       <updated>1557573543002</updated>
       <workItem from="1557573544654" duration="6721000" />
-      <workItem from="1557583050587" duration="7896000" />
+      <workItem from="1557583050587" duration="8754000" />
     </task>
+    <task id="LOCAL-00001" summary="Yönetim Paneli İç ve Dış Sayfa Yapısı, Site Ayarları Güncelletme, Sözleşme ve Metin Alanlarını Güncelletme İşlemleri">
+      <created>1557608941043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557608941043</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14617000" />
+    <option name="totallyTimeSpent" value="15475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -214,7 +218,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -225,6 +229,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Yönetim Paneli İç ve Dış Sayfa Yapısı, Site Ayarları Güncelletme, Sözleşme ve Metin Alanlarını Güncelletme İşlemleri" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yönetim Paneli İç ve Dış Sayfa Yapısı, Site Ayarları Güncelletme, Sözleşme ve Metin Alanlarını Güncelletme İşlemleri" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ayar.php" />
@@ -308,7 +316,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ayarlar/ayar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="142">
           <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
         </state>
       </provider>
