@@ -1,6 +1,6 @@
 <?php
 try{
-	$VeritabaniBaglantisi	=	new PDO("mysql:host=localhost;dbname=dekorlink;charset=UTF8", "root", "");
+	$VeritabaniBaglantisi	=	new PDO("mysql:host=localhost;dbname=yeni_dekorlink;charset=UTF8", "root", "");
 }catch(PDOException $Hata){
 	//echo "Bağlantı Hatası<br />" . $Hata->getMessage(); // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
 	die();
@@ -38,7 +38,27 @@ if($AyarSayisi>0){
 	//echo "Site Ayar Sorgusu Hatalı"; // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
 	die();
 }
-/*
+
+
+if(isset($_SESSION["Yonetici"])){
+    $YoneticiSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM yoneticiler WHERE KullaniciAdi = ? LIMIT 1");
+    $YoneticiSorgusu->execute([$_SESSION["Yonetici"]]);
+    $YoneticiSayisi			=	$YoneticiSorgusu->rowCount();
+    $Yonetici				=	$YoneticiSorgusu->fetch(PDO::FETCH_ASSOC);
+
+    if($YoneticiSayisi>0){
+        $YoneticiID					=	$Yonetici["id"];
+        $YoneticiKullaniciAdi		=	$Yonetici["KullaniciAdi"];
+        $YoneticiSifre				=	$Yonetici["Sifre"];
+        $YoneticiIsimSoyisim		=	$Yonetici["IsimSoyisim"];
+        $YoneticiEmailAdresi		=	$Yonetici["EmailAdresi"];
+        $YoneticiTelefonNumarasi	=	$Yonetici["TelefonNumarasi"];
+    }else{
+        //echo "Yönetici Sorgusu Hatalı"; // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
+        die();
+    }
+}
+
 $MetinlerSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM sozlesmelervemetinler LIMIT 1");
 $MetinlerSorgusu->execute();
 $MetinlerSayisi			=	$MetinlerSorgusu->rowCount();
@@ -57,6 +77,7 @@ if($MetinlerSayisi>0){
 	die();
 }
 
+/*
 if(isset($_SESSION["Kullanici"])){
 	$KullaniciSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM uyeler WHERE EmailAdresi = ? LIMIT 1");
 	$KullaniciSorgusu->execute([$_SESSION["Kullanici"]]);
@@ -80,22 +101,5 @@ if(isset($_SESSION["Kullanici"])){
 	}
 }
 
-if(isset($_SESSION["Yonetici"])){
-	$YoneticiSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM yoneticiler WHERE KullaniciAdi = ? LIMIT 1");
-	$YoneticiSorgusu->execute([$_SESSION["Yonetici"]]);
-	$YoneticiSayisi			=	$YoneticiSorgusu->rowCount();
-	$Yonetici				=	$YoneticiSorgusu->fetch(PDO::FETCH_ASSOC);
-
-	if($YoneticiSayisi>0){
-		$YoneticiID					=	$Yonetici["id"];
-		$YoneticiKullaniciAdi		=	$Yonetici["KullaniciAdi"];
-		$YoneticiSifre				=	$Yonetici["Sifre"];
-		$YoneticiIsimSoyisim		=	$Yonetici["IsimSoyisim"];
-		$YoneticiEmailAdresi		=	$Yonetici["EmailAdresi"];
-		$YoneticiTelefonNumarasi	=	$Yonetici["TelefonNumarasi"];
-	}else{
-		//echo "Yönetici Sorgusu Hatalı"; // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
-		die();
-	}
-}*/
+*/
 ?>
