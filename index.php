@@ -129,7 +129,7 @@ if (isset($_REQUEST["SK"])) {
                     </tr>
 
                     <tr height="30">
-                        <td class="AltMenusu">&nbsp;<a href="xxxxxx">Havale Bildirim Formu</a></td>
+                        <td class="AltMenusu">&nbsp;<a href="index.php?SK=9">Havale Bildirim Formu</a></td>
                         <td>&nbsp;</td>
                         <td class="AltMenusu"><a href="xxxxxx">Sık Sorulan Sorular</a></td>
                         <td>&nbsp;</td>

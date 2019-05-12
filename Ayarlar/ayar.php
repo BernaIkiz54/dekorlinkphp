@@ -1,6 +1,6 @@
 <?php
 try{
-    $VeritabaniBaglantisi	=	new PDO("mysql:host=localhost;dbname=extraegitim;charset=UTF8", "root", "");
+    $VeritabaniBaglantisi	=	new PDO("mysql:host=localhost;dbname=dekorlink;charset=UTF8", "root", "");
 }catch(PDOException $Hata){
     //echo "Bağlantı Hatası<br />" . $Hata->getMessage(); // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
     die();
