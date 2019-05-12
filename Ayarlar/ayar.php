@@ -38,7 +38,7 @@ if($AyarSayisi>0){
 	//echo "Site Ayar Sorgusu Hatalı"; // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
 	die();
 }
-/*
+
 $MetinlerSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM sozlesmelervemetinler LIMIT 1");
 $MetinlerSorgusu->execute();
 $MetinlerSayisi			=	$MetinlerSorgusu->rowCount();
@@ -56,7 +56,7 @@ if($MetinlerSayisi>0){
 	//echo "Metinler Sorgusu Hatalı"; // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
 	die();
 }
-
+/*
 if(isset($_SESSION["Kullanici"])){
 	$KullaniciSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM uyeler WHERE EmailAdresi = ? LIMIT 1");
 	$KullaniciSorgusu->execute([$_SESSION["Kullanici"]]);
