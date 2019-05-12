@@ -146,7 +146,7 @@ if (isset($_REQUEST["SK"])) {
                         </td>
                     </tr>
                     <tr height="30">
-                        <td class="AltMenusu">&nbsp;<a href="xxxxxx">Kargom Nerede</a></td>
+                        <td class="AltMenusu">&nbsp;<a href="index.php?SK=14">Kargom Nerede</a></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
