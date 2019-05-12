@@ -3,7 +3,7 @@ $IPAdresi				=	$_SERVER["REMOTE_ADDR"];
 $ZamanDamgasi			=	time();
 $TarihSaat				=	date("d.m.Y H:i:s", $ZamanDamgasi);
 $SiteKokDizini			=	$_SERVER["DOCUMENT_ROOT"];
-$ResimKlasoruYolu		=	"/Resimler/";
+$ResimKlasoruYolu		=	"/dekorlinkphp/Resimler/";
 $VerotIcinKlasorYolu	=	$SiteKokDizini.$ResimKlasoruYolu;
 
 function TarihBul($Deger){
