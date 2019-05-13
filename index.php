@@ -40,7 +40,7 @@ if (isset($_REQUEST["SK"])) {
                         <td width="20px"><img src="Resimler/KullaniciBeyaz16x16.png" style="margin-top: 5px;"
                                               border="0">
                         </td>
-                        <td width="70" class="MaviAlanMenusu"><a href="xxxxxx">Giriş Yap</a></td>
+                        <td width="70" class="MaviAlanMenusu"><a href="index.php?SK=31">Giriş Yap</a></td>
                         <td width="20px"><img src="Resimler/KullaniciEkleBeyaz16x16.png" style="margin-top: 5px;"
                                               border="0"></td>
                         <td width="85" class="MaviAlanMenusu"><a href="index.php?SK=22">Yeni Üye Ol</a></td>
@@ -114,7 +114,7 @@ if (isset($_REQUEST["SK"])) {
                     <tr height="30">
                         <td class="AltMenusu">&nbsp;<a href="index.php?SK=8">Banka Hesaplarımız</a></td>
                         <td>&nbsp;</td>
-                        <td class="AltMenusu"><a href="xxxxxx">Giriş Yap</a></td>
+                        <td class="AltMenusu"><a href="index.php?SK=31">Giriş Yap</a></td>
                         <td>&nbsp;</td>
                         <td class="AltMenusu"><a href="index.php?SK=3">Kullanım Koşulları</a></td>
                         <td>&nbsp;</td>

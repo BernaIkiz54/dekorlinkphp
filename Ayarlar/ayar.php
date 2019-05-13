@@ -59,22 +59,22 @@ if($MetinlerSayisi>0){
 }
 
 if(isset($_SESSION["Kullanici"])){
-    $KullaniciSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM uyeler WHERE EmailAdresi = ? LIMIT 1");
+    $KullaniciSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * FROM uyeler WHERE email = ? LIMIT 1");
     $KullaniciSorgusu->execute([$_SESSION["Kullanici"]]);
     $KullaniciSayisi		=	$KullaniciSorgusu->rowCount();
     $Kullanici				=	$KullaniciSorgusu->fetch(PDO::FETCH_ASSOC);
 
     if($KullaniciSayisi>0){
-        $KullaniciID		=	$Kullanici["id"];
-        $EmailAdresi		=	$Kullanici["EmailAdresi"];
-        $Sifre				=	$Kullanici["Sifre"];
-        $IsimSoyisim		=	$Kullanici["IsimSoyisim"];
-        $TelefonNumarasi	=	$Kullanici["TelefonNumarasi"];
-        $Cinsiyet			=	$Kullanici["Cinsiyet"];
-        $Durumu				=	$Kullanici["Durumu"];
-        $KayitTarihi		=	$Kullanici["KayitTarihi"];
-        $KayitIpAdresi		=	$Kullanici["KayitIpAdresi"];
-        $AktivasyonKodu		=	$Kullanici["AktivasyonKodu"];
+        $KullaniciID		=	$Kullanici["UyeID"];
+        $EmailAdresi		=	$Kullanici["email"];
+        $Sifre				=	$Kullanici["sifre"];
+        $IsimSoyisim		=	$Kullanici["ad_soyad"];
+        $TelefonNumarasi	=	$Kullanici["TelNo"];
+        $Durumu				=	$Kullanici["aktif_mi"];
+        $KayitTarihi		=	$Kullanici["olusturma_tarihi"];
+        $AktivasyonKodu	    =   $Kullanici["aktivasyon_anahtari"];
+        $KayitGuncelleme	=	$Kullanici["guncelleme_tarihi"];
+        $KayitSilinme		=	$Kullanici["silinme_tarihi"];
     }else{
         //echo "Kullanıcı Sorgusu Hatalı"; // Bu alanı kapatın çünkü site hata yaparsa kullanıcılar hata değerini görmesin.
         die();
