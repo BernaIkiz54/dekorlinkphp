@@ -7,7 +7,7 @@
                         <td colspan="2" style="color:#FF9900"><h3>Hesap Oluştur</h3></td>
                     </tr>
                     <tr height="30">
-                        <td colspan="2" valign="top" style="border-bottom: 1px dashed #CCCCCC;">Yenimisin? Aşağıdan Hesap Oluşturabilirsin.</td>
+                        <td colspan="2" valign="top" style="border-bottom: 1px solid #CCCCCC;">Yenimisin? Aşağıdan Hesap Oluşturabilirsin.</td>
                     </tr>
                     <tr height="30">
                         <td colspan="2" valign="bottom" align="left">E-Mail Adresi (*)</td>
@@ -58,7 +58,7 @@
                     <td colspan="2" style="color:#FF9900"><h3>Neden mi Dekorlink?</h3></td>
                 </tr>
                 <tr height="30">
-                    <td colspan="2" valign="top" style="border-bottom: 1px dashed #CCCCCC;">Sorusunun Cevabı: Çünkü Birçok Nedeni Var!.</td>
+                    <td colspan="2" valign="top" style="border-bottom: 1px solid #CCCCCC;">Sorusunun Cevabı: Çünkü Birçok Nedeni Var!.</td>
                 </tr>
                 <tr height="5">
                     <td colspan="2" height="5" style="font-size: 5px;">&nbsp;</td>
