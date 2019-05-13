@@ -54,7 +54,7 @@ if(isset($_SESSION["Yonetici"])){
 			$UrununMenuSorgusu->execute([DonusumleriGeriDondur($Urunler["kategori_id"])]);
 			$UrunMenuKaydi			=	$UrununMenuSorgusu->fetch(PDO::FETCH_ASSOC);
 
-				$ResimKlasoru	=	"Cocuk";
+				$ResimKlasoru	=	"ürünler";
 
 	?>	
 	<tr height="80">
@@ -65,8 +65,25 @@ if(isset($_SESSION["Yonetici"])){
 				<td width="680" valign="top"><table width="680" align="right" border="0" cellpadding="0" cellspacing="0">
 
                         <tr height="25">
-                            <td colspan="2"><?php echo DonusumleriGeriDondur($UrunMenuKaydi["kategori_adi"]); ?> -> <?php echo DonusumleriGeriDondur($UrunMenuKaydi["kategori_adi"]); ?></td>
-                        </tr>
+                           <?php
+                           if($UrunMenuKaydi["ust_id"]!=null)
+                           {
+                               $UrununUstKategoirsi		=	$VeritabaniBaglantisi->prepare("SELECT * FROM kategori WHERE id = ? LIMIT 1");
+                               $UrununUstKategoirsi->execute([DonusumleriGeriDondur($UrunMenuKaydi["ust_id"])]);
+                               $UrunUstKateegoriKaydi			=	$UrununUstKategoirsi->fetch(PDO::FETCH_ASSOC);
+
+                               ?>
+                               <td colspan="2"><?php echo DonusumleriGeriDondur($UrunUstKateegoriKaydi["kategori_adi"]); ?> -> <?php echo DonusumleriGeriDondur($UrunMenuKaydi["kategori_adi"]); ?></td>
+
+                             <?php
+                           }
+                           else{?>
+                               <td colspan="2"><?php echo DonusumleriGeriDondur($UrunMenuKaydi["kategori_adi"]); ?> -> <?php echo DonusumleriGeriDondur($UrunMenuKaydi["kategori_adi"]); ?></td>
+
+                             <?php
+                           }?>
+
+                               </tr>
 
 
 					<tr height="25">
