@@ -1,7 +1,7 @@
 <table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td width="500" valign="top">
-            <form action="index.php?SK=10" method="post">
+            <form action="index.php?SK=23" method="post">
                 <table width="500" align="center" border="0" cellpadding="0" cellspacing="0" >
                     <tr height="40">
                         <td colspan="2" style="color:#FF9900"><h3>Hesap Oluştur</h3></td>
@@ -38,16 +38,6 @@
                     </tr>
                     <tr height="30">
                         <td colspan="2" valign="top" align="left"><input type="text" name="TelefonNumarasi" maxlength="11" class="InputAlanlari"></td>
-                    </tr>
-                    <tr height="30">
-                        <td colspan="2" valign="bottom" align="left">Cinsiyet (*)</td>
-                    </tr>
-                    <tr height="30">
-                        <td colspan="2" valign="top" align="left"><select name="Cinsiyet" class="SelectAlanlari">
-                                <option value="">Lütfen Seçiniz</option>
-                                <option value="Erkek">Erkek</option>
-                                <option value="Kadın">Kadın</option>
-                            </select></td>
                     </tr>
                     <tr height="40">
                         <td align="left" width="25"><input type="checkbox" name="SozlesmeOnay" value="1"></td>
