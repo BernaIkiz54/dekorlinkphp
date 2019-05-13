@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebca398d-41c7-4e77-afda-74d6ea93cebc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sifremiunuttumsonuchata.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yenisifreolustur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yenisifreolustursonuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ayarlar/ayar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Ayarlar/ayar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyegirissonuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/uyegirissonuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyegirissonucaktivasyonsuz.php" beforeDir="false" afterPath="$PROJECT_DIR$/uyegirissonucaktivasyonsuz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyegirissonuceksikalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/uyegirissonuceksikalan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeniuyeolsonuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/yeniuyeolsonuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sifremiunuttumsonuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/sifremiunuttumsonuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sifremiunuttumsonuchata.php" beforeDir="false" afterPath="$PROJECT_DIR$/sifremiunuttumsonuchata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sifremiunuttumsonuctamam.php" beforeDir="false" afterPath="$PROJECT_DIR$/sifremiunuttumsonuctamam.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php" beforeDir="false" afterPath="$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yenisifreolustursonuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/yenisifreolustursonuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yenisifreolustursonuceksikalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/yenisifreolustursonuceksikalan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yenisifreolustursonuchata.php" beforeDir="false" afterPath="$PROJECT_DIR$/yenisifreolustursonuchata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yenisifreolustursonucuyusmayansifre.php" beforeDir="false" afterPath="$PROJECT_DIR$/yenisifreolustursonucuyusmayansifre.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,69 +21,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuc.php">
+        <entry file="file://$PROJECT_DIR$/Ayarlar/sitesayfalari.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="245">
+              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuctamam.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuchata.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php">
+        <entry file="file://$PROJECT_DIR$/yeniuyeolsonuctekrarlanan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="272">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yenisifreolustur.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yenisifreolustursonuc.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yenisifreolusturtamam.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yenisifreolustursonuchata.php">
+        <entry file="file://$PROJECT_DIR$/yenisifreolustursonuceksikalan.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/yenisifreolustursonucuyusmayansifre.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/uyegirissonucaktivasyonsuz.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -135,6 +100,12 @@
         <option value="$PROJECT_DIR$/yeniuyeolsonuc.php" />
         <option value="$PROJECT_DIR$/uyegirissonuc.php" />
         <option value="$PROJECT_DIR$/Ayarlar/ayar.php" />
+        <option value="$PROJECT_DIR$/hesabimuyelikbilgilerim.php" />
+        <option value="$PROJECT_DIR$/sifremiunuttumsonuctamam.php" />
+        <option value="$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php" />
+        <option value="$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php" />
+        <option value="$PROJECT_DIR$/sifremiunuttumsonuchata.php" />
+        <option value="$PROJECT_DIR$/sifremiunuttumsonuc.php" />
       </list>
     </option>
   </component>
@@ -199,7 +170,7 @@
       <updated>1557691516381</updated>
       <workItem from="1557691517517" duration="13253000" />
       <workItem from="1557741208008" duration="16326000" />
-      <workItem from="1557771739163" duration="2964000" />
+      <workItem from="1557771739163" duration="5037000" />
     </task>
     <task id="LOCAL-00001" summary="kargo takip sayfalarının hazırlanması">
       <created>1557703975077</created>
@@ -226,7 +197,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32543000" />
+    <option name="totallyTimeSpent" value="34616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -286,19 +257,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="uye kayıt islemleri yapıldı" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/anasayfa.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/havalebildirimformusonuctamam.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evdekorasyon.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/havalebildirimformusonuchata.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -388,13 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yeniuyeolsonuctekrarlanan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ayarlar/yonetimsayfalaridis.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -453,13 +404,6 @@
     <entry file="file://$PROJECT_DIR$/uyeliksozlesmesi.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ayarlar/sitesayfalari.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="51" column="48" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ayarlar/hesabimuyelikbilgilerim.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -488,20 +432,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hesabimuyelikbilgilerim.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ayarlar/ayar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uyegirissonucaktivasyonsuz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -540,40 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sifremiunuttum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuchata.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuctamam.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yenisifreolustur.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -592,6 +492,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yenisifreolustursonucuyusmayansifre.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hesabim.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hesabimuyelikbilgilerim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuctamam.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuchata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonucyanlisbilgi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuceksikalan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sifremiunuttumsonuc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="47" column="107" lean-forward="true" selection-start-line="47" selection-start-column="107" selection-end-line="47" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teslimat.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sifremiunuttum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ayarlar/sitesayfalari.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yeniuyeolsonuctekrarlanan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yenisifreolustursonuceksikalan.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uyegirissonucaktivasyonsuz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
