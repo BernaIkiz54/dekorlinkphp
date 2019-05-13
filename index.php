@@ -1,4 +1,5 @@
 <?php
+session_start(); ob_start();
 require_once("Ayarlar/ayar.php");
 require_once("Ayarlar/fonksiyonlar.php");
 require_once("Ayarlar/sitesayfalari.php");
@@ -42,7 +43,7 @@ if (isset($_REQUEST["SK"])) {
                         <td width="70" class="MaviAlanMenusu"><a href="xxxxxx">Giriş Yap</a></td>
                         <td width="20px"><img src="Resimler/KullaniciEkleBeyaz16x16.png" style="margin-top: 5px;"
                                               border="0"></td>
-                        <td width="85" class="MaviAlanMenusu"><a href="xxxxxx">Yeni Üye Ol</a></td>
+                        <td width="85" class="MaviAlanMenusu"><a href="index.php?SK=22">Yeni Üye Ol</a></td>
                         <td width="20px"><img src="Resimler/SepetBeyaz16x16.png" style="margin-top: 5px;" border="0">
                         </td>
                         <td width="103" class="MaviAlanMenusu"><a href="xxxxxx">Alışveriş Sepeti</a></td>
@@ -96,7 +97,7 @@ if (isset($_REQUEST["SK"])) {
                     <tr height="30">
                         <td class="AltMenusu">&nbsp;<a href="index.php?SK=1">Hakkımızda</a></td>
                         <td>&nbsp;</td>
-                        <td class="AltMenusu"><a href="xxxxxx">Yeni Üye Ol</a></td>
+                        <td class="AltMenusu"><a href="index.php?SK=22">Yeni Üye Ol</a></td>
                         <td>&nbsp;</td>
                         <td class="AltMenusu"><a href="index.php?SK=2">Üyelik Sözleşmesi</a></td>
                         <td>&nbsp;</td>
@@ -163,7 +164,7 @@ if (isset($_REQUEST["SK"])) {
                         </td>
                     </tr>
                     <tr height="30">
-                        <td class="AltMenusu">&nbsp;<a href="xxxxxx">İletişim<a></a></td>
+                        <td class="AltMenusu">&nbsp;<a href="index.php?SK=16">İletişim<a></a></td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
@@ -234,4 +235,5 @@ if (isset($_REQUEST["SK"])) {
     </html>
 <?php
 $VeritabaniBaglantisi = null;
+ob_end_flush();
 ?>
