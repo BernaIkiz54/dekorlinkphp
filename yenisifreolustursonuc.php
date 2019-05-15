@@ -34,7 +34,7 @@ if(($GelenEmailAdresi!="") and ($GelenAktivasyonKodu!="") and ($GelenSifre!="") 
 		header("Location:index.php?SK=47");
 		exit();
 	}else{
-		$UyeGuncellemeSorgusu	=	$VeritabaniBaglantisi->prepare("UPDATE uyeler SET Sifre = ? WHERE EmailAdresi = ? AND AktivasyonKodu = ? LIMIT 1");
+		$UyeGuncellemeSorgusu	=	$VeritabaniBaglantisi->prepare("UPDATE uyeler SET sifre = ? WHERE email = ? AND aktivasyon_anahtari=? LIMIT 1");
 		$UyeGuncellemeSorgusu->execute([$MD5liSifre, $GelenEmailAdresi, $GelenAktivasyonKodu]);
 		$Kontrol				=	$UyeGuncellemeSorgusu->rowCount();
 
