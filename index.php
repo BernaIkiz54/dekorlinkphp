@@ -8,6 +8,11 @@ if (isset($_REQUEST["SK"])) {
 } else {
     $SayfaKoduDegeri = 0;
 }
+if(isset($_REQUEST["SYF"])){
+	$Sayfalama			=	SayiliIcerikleriFiltrele($_REQUEST["SYF"]);
+}else{
+	$Sayfalama			=	1;
+}
 ?>
     <!doctype html>
     <html lang="en">
