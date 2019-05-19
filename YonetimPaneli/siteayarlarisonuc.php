@@ -140,7 +140,6 @@ if(isset($_SESSION["Yonetici"])){
 					} 
 				}
 		}
-			
 		header("Location:index.php?SKD=0&SKI=3");
 		exit();
 	}else{
