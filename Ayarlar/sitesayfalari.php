@@ -106,5 +106,5 @@ $Sayfa[103]		=	"alisverissepetikredikartiodeme.php";
 $Sayfa[104]		=	"alisverissepetikredikartiodemesonuc.php";
 $Sayfa[105]		=	"alisverissepetikredikartiodemesonuctamam.php";
 $Sayfa[106]		=	"alisverissepetikredikartiodemesonuchata.php";
-$Sayfa[107]     =   "aydinlatma.php"
+$Sayfa[107]     =   "aydinlatma.php";
 ?>

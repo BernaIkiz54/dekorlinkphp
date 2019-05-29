@@ -2,12 +2,13 @@
 if(isset($_SESSION["Kullanici"])){
 
     $SayfalamaIcinSolVeSagButonSayisi		=	2;
-    $SayfaBasinaGosterilecekKayitSayisi		=	10;
+    $SayfaBasinaGosterilecekKayitSayisi		=	1;
     $ToplamKayitSayisiSorgusu				=	$VeritabaniBaglantisi->prepare("SELECT * FROM yorumlar WHERE UyeId = ? ORDER BY YorumTarihi DESC");
     $ToplamKayitSayisiSorgusu->execute([$KullaniciID]);
     $ToplamKayitSayisiSorgusu				=	$ToplamKayitSayisiSorgusu->rowCount();
     $SayfalamayaBaslanacakKayitSayisi		=	($Sayfalama*$SayfaBasinaGosterilecekKayitSayisi)-$SayfaBasinaGosterilecekKayitSayisi;
     $BulunanSayfaSayisi						=	ceil($ToplamKayitSayisiSorgusu/$SayfaBasinaGosterilecekKayitSayisi);
+
     ?>
     <table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">
         <tr>
