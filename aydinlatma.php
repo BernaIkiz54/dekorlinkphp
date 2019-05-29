@@ -152,7 +152,7 @@ $AnaMenununTumUrunSayiSorgusu = $AnaMenununTumUrunSayiSorgusu->fetch(PDO::FETCH_
                                     $DonguSayisi = 1;
                                     $SutunAdetSayisi = 4;
                                 } else {
-                                    $UrunlerSorgusu = $VeritabaniBaglantisi->prepare("SELECT *,kategori.kategori_adi as kategori FROM urun,kategori WHERE urun.kategori_id=kategori.id And kategori.ust_id=20 AND Durumu = '0'  $AramaKosulu ORDER BY kategori.id DESC LIMIT $SayfalamayaBaslanacakKayitSayisi, $SayfaBasinaGosterilecekKayitSayisi");
+                                    $UrunlerSorgusu = $VeritabaniBaglantisi->prepare("SELECT *,urun.id as ID,kategori.kategori_adi as kategori FROM urun,kategori WHERE urun.kategori_id=kategori.id And kategori.ust_id=20 AND Durumu = '0'  $AramaKosulu ORDER BY kategori.id DESC LIMIT $SayfalamayaBaslanacakKayitSayisi, $SayfaBasinaGosterilecekKayitSayisi");
                                     $UrunlerSorgusu->execute();
                                     $UrunSayisi = $UrunlerSorgusu->rowCount();
                                     $UrunKayitlari = $UrunlerSorgusu->fetchAll(PDO::FETCH_ASSOC);
@@ -199,11 +199,15 @@ $AnaMenununTumUrunSayiSorgusu = $AnaMenununTumUrunSayiSorgusu->fetch(PDO::FETCH_
                                             <?php
                                             if ($GelenMenuId == "") {
                                                 $kategoriadi = $Kayit["kategori"];
+                                                $id=$Kayit["ID"];
+                                            }
+                                            else{
+                                                $id=$Kayit["id"];
                                             }
                                             ?>
                                             <tr height="40">
                                                 <td align="center"><a
-                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($Kayit["id"]); ?>">
+                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($id); ?>">
                                                         <img
                                                                 src="Resimler/UrunResimleri/<?php echo DonusumleriGeriDondur($kategoriadi); ?>/<?php echo DonusumleriGeriDondur($Kayit["UrunResmiBir"]); ?>"
                                                                 border="0" width="185" height="247"></a></td>
@@ -211,27 +215,27 @@ $AnaMenununTumUrunSayiSorgusu = $AnaMenununTumUrunSayiSorgusu->fetch(PDO::FETCH_
 
                                             <tr height="25">
                                                 <td width="191" align="center"><a
-                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($Kayit["id"]); ?>"
+                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($id); ?>"
                                                             style="color: #FF9900; font-weight: bold; text-decoration: none;"><?php echo DonusumleriGeriDondur($kategoriadi); ?></a>
                                                 </td>
                                             </tr>
 
                                             <tr height="25">
                                                 <td width="191" align="center"><a
-                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($Kayit["id"]); ?>"
+                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($id); ?>"
                                                             style="color: #646464; font-weight: bold; text-decoration: none;">
                                                         <div style="width: 191px; max-width: 191px; height: 20px; overflow: hidden; line-height: 20px;"><?php echo DonusumleriGeriDondur($Kayit["urun_adi"]); ?></div>
                                                     </a></td>
                                             </tr>
                                             <tr height="25">
                                                 <td width="191" align="center"><a
-                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($Kayit["id"]); ?>"><img
+                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($id); ?>"><img
                                                                 src="Resimler/<?php echo $PuanResmi; ?>" border="0"></a>
                                                 </td>
                                             </tr>
                                             <tr height="25">
                                                 <td width="191" align="center"><a
-                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($Kayit["id"]); ?>"
+                                                            href="index.php?SK=83&ID=<?php echo DonusumleriGeriDondur($id); ?>"
                                                             style="color: #0000FF; font-weight: bold; text-decoration: none;"><?php echo FiyatBicimlendir($UrunFiyatiHesapla); ?>
                                                         TL</a></td>
                                             </tr>
