@@ -5,11 +5,11 @@ if(isset($_GET["ID"])){
     $UrunHitiGuncellemeSorgusu	=	$VeritabaniBaglantisi->prepare("UPDATE urun SET GoruntulenmeSayisi=GoruntulenmeSayisi+1 WHERE id = ? AND Durumu = ? LIMIT 1");
     $UrunHitiGuncellemeSorgusu->execute([$GelenID, 0]);
 
-    $UrunSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT * ,kategori_adi as kategori FROM urun,kategori WHERE urun.kategori_id=kategori.id AND urun.id = ? AND Durumu = ? LIMIT 1");
+    $UrunSorgusu		=	$VeritabaniBaglantisi->prepare("SELECT *,urun.id as ID,kategori_adi as kategori FROM urun,kategori WHERE urun.kategori_id=kategori.id AND urun.id = ? AND Durumu = ? LIMIT 1");
     $UrunSorgusu->execute([$GelenID, 0]);
     $UrunSayisi			=	$UrunSorgusu->rowCount();
     $UrunSorgusuKaydi	=	$UrunSorgusu->fetch(PDO::FETCH_ASSOC);
-
+    $UrunId             =   $UrunSorgusuKaydi["ID"];
     if($UrunSayisi>0){
         $UrununFiyati		=	DonusumleriGeriDondur($UrunSorgusuKaydi["fiyat"]);
         $kategori           =   DonusumleriGeriDondur($UrunSorgusuKaydi["kategori"]);
@@ -68,7 +68,7 @@ if(isset($_GET["ID"])){
                             <td style="text-align: left; font-size: 18px; font-weight: bold;">&nbsp;<?php echo DonusumleriGeriDondur($UrunSorgusuKaydi["urun_adi"]); ?></td>
                         </tr>
                         <tr>
-                            <td><form action="index.php?SK=91&ID=<?php echo DonusumleriGeriDondur($UrunSorgusuKaydi["id"]); ?>" method="post"><table width="705" align="center" border="0" cellpadding="0" cellspacing="0">
+                            <td><form action="index.php?SK=91&ID=<?php echo DonusumleriGeriDondur($UrunId); ?>" method="post"><table width="705" align="center" border="0" cellpadding="0" cellspacing="0">
                                         <tr height="45">
                                             <td width="30"><a href="<?php echo DonusumleriGeriDondur($SosyalLinkFacebook); ?>" target="_blank"><img src="Resimler/Facebook24x24.png" border="0" style="margin-top: 5px;"></a></td>
                                             <td width="30"><a href="<?php echo DonusumleriGeriDondur($SosyalLinkTwitter); ?>" target="_blank"><img src="Resimler/Twitter24x24.png" border="0" style="margin-top: 5px;"></a></td>

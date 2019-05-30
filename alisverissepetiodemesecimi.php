@@ -11,7 +11,7 @@ if(isset($_SESSION["Kullanici"])){
 		$GelenKargoSecimi		=	"";
 	}
 	if(($GelenAdresSecimi!="") and ($GelenKargoSecimi!="")){
-		$SepettiGuncellemeSorgusu	=	$VeritabaniBaglantisi->prepare("UPDATE sepet SET KargoId = ?, AdresId = ? WHERE UyeId = ?");
+		$SepettiGuncellemeSorgusu	=	$VeritabaniBaglantisi->prepare("UPDATE sepetweb SET KargoId = ?, AdresId = ? WHERE UyeId = ?");
 		$SepettiGuncellemeSorgusu->execute([$GelenKargoSecimi, $GelenAdresSecimi, $KullaniciID]);
 		$GuncellemeKontrol			=	$SepettiGuncellemeSorgusu->rowCount();
 			

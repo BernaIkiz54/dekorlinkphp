@@ -7,7 +7,7 @@ if(isset($_SESSION["Kullanici"])){
 	}
 
 	if($GelenID!=""){	
-		$SepetGuncellemeSorgusu		=	$VeritabaniBaglantisi->prepare("UPDATE sepet SET UrunAdedi=UrunAdedi-1 WHERE id = ? AND UyeId = ? LIMIT 1");
+		$SepetGuncellemeSorgusu		=	$VeritabaniBaglantisi->prepare("UPDATE sepetweb SET UrunAdedi=UrunAdedi-1 WHERE id = ? AND UyeId = ? LIMIT 1");
 		$SepetGuncellemeSorgusu->execute([$GelenID, $KullaniciID]);
 		$SepetGuncellemeSayisi		=	$SepetGuncellemeSorgusu->rowCount();
 

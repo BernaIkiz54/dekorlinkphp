@@ -7,7 +7,7 @@ if(isset($_SESSION["Kullanici"])){
 	}
 
 	if($GelenID!=""){
-		$SepetSilSorgusu		=	$VeritabaniBaglantisi->prepare("DELETE FROM sepet WHERE id = ? AND UyeId = ? LIMIT 1");
+		$SepetSilSorgusu		=	$VeritabaniBaglantisi->prepare("DELETE FROM sepetweb WHERE id = ? AND UyeId = ? LIMIT 1");
 		$SepetSilSorgusu->execute([$GelenID, $KullaniciID]);
 		$SepetSilmeSayisi		=	$SepetSilSorgusu->rowCount();
 

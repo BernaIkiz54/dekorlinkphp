@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION["Kullanici"])){
 
-$StokIcinSepettekiUrunlerSorgusu	=	$VeritabaniBaglantisi->prepare("SELECT * FROM sepet WHERE UyeId = ?");
+$StokIcinSepettekiUrunlerSorgusu	=	$VeritabaniBaglantisi->prepare("SELECT * FROM sepetweb WHERE UyeId = ?");
 $StokIcinSepettekiUrunlerSorgusu->execute([$KullaniciID]);
 $StokIcinSepettekiUrunSayisi		=	$StokIcinSepettekiUrunlerSorgusu->rowCount();
 $StokIcinSepettiKayitlar			=	$StokIcinSepettekiUrunlerSorgusu->fetchAll(PDO::FETCH_ASSOC);
@@ -9,24 +9,20 @@ $StokIcinSepettiKayitlar			=	$StokIcinSepettekiUrunlerSorgusu->fetchAll(PDO::FET
 if($StokIcinSepettekiUrunSayisi>0){
 	foreach($StokIcinSepettiKayitlar as $StokIcinSepettekiSatirlar){
 		$StokIcinSepetIdsi						=	$StokIcinSepettekiSatirlar["id"];
-		$StokIcinSepettekiUrununVaryantIdsi		=	$StokIcinSepettekiSatirlar["VaryantId"];
 		$StokIcinSepettekiUrununAdedi			=	$StokIcinSepettekiSatirlar["UrunAdedi"];
-		
-		$StokIcinUrunVaryantBilgileriSorgusu	=	$VeritabaniBaglantisi->prepare("SELECT * FROM urunvaryantlari WHERE id = ? LIMIT 1");
-		$StokIcinUrunVaryantBilgileriSorgusu->execute([$StokIcinSepettekiUrununVaryantIdsi]);
-		$StokIcinVaryantKaydi					=	$StokIcinUrunVaryantBilgileriSorgusu->fetch(PDO::FETCH_ASSOC);
-			$StokIcinUrununStokAdedi	=	$StokIcinVaryantKaydi["StokAdedi"];
-	
+        $StokIcinUrununStokAdediSorgusu         = $VeritabaniBaglantisi->prepare("SELECT StokAdeti FROM urun WHERE id=?");
+        $StokIcinSepettekiUrunlerSorgusu->execute([$KullaniciID]);
 		if($StokIcinUrununStokAdedi==0){
-			$SepetSilSorgusu		=	$VeritabaniBaglantisi->prepare("DELETE FROM sepet WHERE id = ? AND UyeId = ? LIMIT 1");
+			$SepetSilSorgusu		=	$VeritabaniBaglantisi->prepare("DELETE FROM sepetweb WHERE id = ? AND UyeId = ? LIMIT 1");
 			$SepetSilSorgusu->execute([$StokIcinSepetIdsi, $KullaniciID]);
 		}elseif($StokIcinSepettekiUrununAdedi>$StokIcinUrununStokAdedi){
-			$SepetGuncellemeSorgusu		=	$VeritabaniBaglantisi->prepare("UPDATE sepet SET UrunAdedi= ? WHERE id = ? AND UyeId = ? LIMIT 1");
+			$SepetGuncellemeSorgusu		=	$VeritabaniBaglantisi->prepare("UPDATE sepetweb SET UrunAdedi= ? WHERE id = ? AND UyeId = ? LIMIT 1");
 			$SepetGuncellemeSorgusu->execute([$StokIcinUrununStokAdedi, $StokIcinSepetIdsi, $KullaniciID]);
 		}
 	}
 }
 ?>
+
 <form action="index.php?SK=99" method="post">
 	<table width="1065" align="center" border="0" cellpadding="0" cellspacing="0">
 		<tr>
@@ -46,11 +42,10 @@ if($StokIcinSepettekiUrunSayisi>0){
 						<td align="right" style="background: #CCCCCC; font-weight: bold;"><a href="index.php?SK=70" style="color: #646464; text-decoration: none; font-weight: bold;">+ Yeni Adres Ekle&nbsp;</a></td>
 					</tr>
 					<?php
-					$SepettekiUrunlerSorgusu	=	$VeritabaniBaglantisi->prepare("SELECT * FROM sepet WHERE UyeId = ? ORDER BY id DESC");
+					$SepettekiUrunlerSorgusu	=	$VeritabaniBaglantisi->prepare("SELECT * FROM sepetweb WHERE UyeId = ? ORDER BY id DESC");
 					$SepettekiUrunlerSorgusu->execute([$KullaniciID]);
 					$SepettekiUrunSayisi		=	$SepettekiUrunlerSorgusu->rowCount();
 					$SepettiKayitlar			=	$SepettekiUrunlerSorgusu->fetchAll(PDO::FETCH_ASSOC);
-
 					if($SepettekiUrunSayisi>0){
 						$SepettekiToplamUrunSayisi			=	0;
 						$SepettekiToplamFiyat				=	0;
@@ -60,41 +55,28 @@ if($StokIcinSepettekiUrunSayisi>0){
 						foreach($SepettiKayitlar as $SepetSatirlari){
 							$SepetIdsi						=	$SepetSatirlari["id"];
 							$SepettekiUrununIdsi			=	$SepetSatirlari["UrunId"];
-							$SepettekiUrununVaryantIdsi		=	$SepetSatirlari["VaryantId"];
 							$SepettekiUrununAdedi			=	$SepetSatirlari["UrunAdedi"];
 
-							$UrunBilgileriSorgusu			=	$VeritabaniBaglantisi->prepare("SELECT * FROM urunler WHERE id = ? LIMIT 1");
+							$UrunBilgileriSorgusu			=	$VeritabaniBaglantisi->prepare("SELECT * FROM urun WHERE id = ? LIMIT 1");
 							$UrunBilgileriSorgusu->execute([$SepettekiUrununIdsi]);
 							$UrunKaydi						=	$UrunBilgileriSorgusu->fetch(PDO::FETCH_ASSOC);
-								$UrununFiyati			=	$UrunKaydi["UrunFiyati"];
-								$UrununParaBirimi		=	$UrunKaydi["ParaBirimi"];
+								$UrununFiyati			=	$UrunKaydi["fiyat"];
 								$UrununKargoUcreti		=	$UrunKaydi["KargoUcreti"];
 
-							if($UrununParaBirimi=="USD"){
-								$UrunFiyatiHesapla				=	$UrununFiyati*$DolarKuru;
-								$UrunFiyatiBicimlendir			=	FiyatBicimlendir($UrunFiyatiHesapla);
-							}elseif($UrununParaBirimi=="EUR"){
-								$UrunFiyatiHesapla				=	$UrununFiyati*$EuroKuru;
-								$UrunFiyatiBicimlendir			=	FiyatBicimlendir($UrunFiyatiHesapla);
-							}else{
-								$UrunFiyatiHesapla				=	$UrununFiyati;
-								$UrunFiyatiBicimlendir			=	FiyatBicimlendir($UrununFiyati);
-							}
 
-							$UrunToplamFiyatiHesapla				=	($UrunFiyatiHesapla*$SepettekiUrununAdedi);
+							$UrunToplamFiyatiHesapla				=	($UrununFiyati*$SepettekiUrununAdedi);
 							$UrunToplamFiyatiBicimlendir			=	FiyatBicimlendir($UrunToplamFiyatiHesapla);
 
 							$SepettekiToplamUrunSayisi				+=	$SepettekiUrununAdedi;
-							$SepettekiToplamFiyat					+=	($UrunFiyatiHesapla*$SepettekiUrununAdedi);
-							
+							$SepettekiToplamFiyat					+=	($UrunununFiyati*$SepettekiUrununAdedi);
+
 							$SepettekiToplamKargoFiyatiHesapla		+=	($UrununKargoUcreti*$SepettekiUrununAdedi);
 							$SepettekiToplamKargoFiyatiBicimlendir	=	FiyatBicimlendir($SepettekiToplamKargoFiyatiHesapla);
 						}
-						
 						if($SepettekiToplamFiyat>=$UcretsizKargoBaraji){
 							$SepettekiToplamKargoFiyatiHesapla		=	0;
 							$SepettekiToplamKargoFiyatiBicimlendir	=	FiyatBicimlendir($SepettekiToplamKargoFiyatiHesapla);
-							
+
 							$OdenecekToplamTutariBicimlendir		=	FiyatBicimlendir($SepettekiToplamFiyat);
 						}else{
 							$OdenecekToplamTutariHesapla			=	($SepettekiToplamFiyat+$SepettekiToplamKargoFiyatiHesapla);
@@ -106,7 +88,7 @@ if($StokIcinSepettekiUrunSayisi>0){
 					$AdresSayisi		=	$AdreslerSorgusu->rowCount();
 					$AdresKayitlari		=	$AdreslerSorgusu->fetchAll(PDO::FETCH_ASSOC);
 
-					if($AdresSayisi>0){		
+					if($AdresSayisi>0){
 						foreach($AdresKayitlari as $AdresSatirlari){
 					?>
 					<tr>
@@ -170,7 +152,7 @@ if($StokIcinSepettekiUrunSayisi>0){
 									</td>
 									<?php
 									$SecimIcinSayi++;
-										
+
 									if($DonguSayisi<$SutunAdetSayisi){
 									?>
 										<td width="10">&nbsp;</td>
@@ -227,7 +209,7 @@ if($StokIcinSepettekiUrunSayisi>0){
 				</tr>
 				<tr height="10">
 					<td style="font-size: 10px;">&nbsp;</td>
-				</tr>				
+				</tr>
 				<tr>
 					<td align="right">Kargo Tutarı (KDV Dahil)</td>
 				</tr>
