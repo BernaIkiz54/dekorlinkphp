@@ -76,6 +76,7 @@ if(isset($_SESSION["Yonetici"])){
                             <td colspan="9" align="right"><table width="95" align="right" border="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td width="20">&nbsp;</td>
+
                                         <td width="25" valign="top" align="left"><a href="index.php?SKD=0&SKI=87&ID=<?php echo DonusumleriGeriDondur($Uyeler["uyeID"]); ?>"><img src="../Resimler/Guncelleme20x20.png" border="0" style="margin-top: 5px;"></a></td>
                                         <td width="50" align="left"><a href="index.php?SKD=0&SKI=87&ID=<?php echo DonusumleriGeriDondur($Uyeler["uyeID"]); ?>" style="color: #009900; text-decoration: none;">Geri Aç</a></td>
                                     </tr>
@@ -83,6 +84,12 @@ if(isset($_SESSION["Yonetici"])){
                         </tr>
 
 
+
+                                        <td width="25" valign="top" align="left"><a href="index.php?SKD=0&SKI=87&ID=<?php echo DonusumleriGeriDondur($Uyeler["id"]); ?>"><img src="../Resimler/Guncelleme20x20.png" border="0" style="margin-top: 5px;"></a></td>
+                                        <td width="50" align="left"><a href="index.php?SKD=0&SKI=87&ID=<?php echo DonusumleriGeriDondur($Uyeler["id"]); ?>" style="color: #009900; text-decoration: none;">Geri Aç</a></td>
+                                    </tr>
+                                </table></td>
+                        </tr>
 
                     </table></td>
 			</tr>

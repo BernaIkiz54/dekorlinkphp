@@ -65,7 +65,7 @@ if(isset($_SESSION["Kullanici"])){
     $Kullanici				=	$KullaniciSorgusu->fetch(PDO::FETCH_ASSOC);
 
     if($KullaniciSayisi>0){
-        $KullaniciID		=	$Kullanici["UyeID"];
+        $KullaniciID		=	$Kullanici["uyeID"];
         $EmailAdresi		=	$Kullanici["email"];
         $Sifre				=	$Kullanici["sifre"];
         $IsimSoyisim		=	$Kullanici["ad_soyad"];

@@ -57,8 +57,8 @@ if (($GelenEmailAdresi != "") and ($GelenSifre != "") and ($GelenSifreTekrar != 
                 header("Location:index.php?SK=27");
                 exit();
             } else {
-                $UyeEklemeSorgusu = $VeritabaniBaglantisi->prepare("INSERT INTO uyeler (email, sifre, ad_soyad, TelNo, aktif_mi, olusturma_tarihi, aktivasyon_anahtari,guncelleme_tarihi,silinme_tarihi) values (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                $UyeEklemeSorgusu->execute([$GelenEmailAdresi, $MD5liSifre, $GelenIsimSoyisim, $GelenTelefonNumarasi, 0, $ZamanDamgasi, $AktivasyonKodu, "", ""]);
+                $UyeEklemeSorgusu = $VeritabaniBaglantisi->prepare("INSERT INTO uyeler (email, sifre, ad_soyad, TelNo, aktif_mi, olusturma_tarihi, aktivasyon_anahtari,guncelleme_tarihi,silinme_tarihi,AktivasyonDurum) values (?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
+                $UyeEklemeSorgusu->execute([$GelenEmailAdresi, $MD5liSifre, $GelenIsimSoyisim, $GelenTelefonNumarasi, 0, $ZamanDamgasi, $AktivasyonKodu, "", "",0]);
                 $KayitKontrol = $UyeEklemeSorgusu->rowCount();
 
                 if ($KayitKontrol > 0) {
